@@ -5,7 +5,7 @@
   "description": "",
   "main": "main.js",
   "bin": {
-    "e403_calculator": "main.js"
+    "syedunshaiderzaidi_calculator": "main.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
