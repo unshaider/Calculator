@@ -1,10 +1,12 @@
+#! /usr/bin/env node
+
 import inquirer from "inquirer";
 import chalk from "chalk";
 
-const answers : {
-    number1: number,
-    number2: number,
-    operator: string,
+const answers: {
+  number1: number;
+  number2: number;
+  operator: string;
 } = await inquirer.prompt([
   {
     type: "number",
