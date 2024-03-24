@@ -14,8 +14,15 @@ const answers = await inquirer.prompt([
     {
         type: "list",
         name: "operator",
-        message: "Select the operator:",
-        choices: ["Addition", "Subtraction", "Multiplication", "Division"],
+        message: "Select the operation:",
+        choices: [
+            "Addition",
+            "Subtraction",
+            "Multiplication",
+            "Division",
+            "Exponentiation",
+            "Modulus",
+        ],
     },
 ]);
 if (answers.operator === "Addition") {
@@ -29,4 +36,10 @@ else if (answers.operator === "Multiplication") {
 }
 else if (answers.operator === "Division") {
     console.log(answers.number1 / answers.number2);
+}
+else if (answers.operator === "Exponentiation") {
+    console.log(answers.number1 ** answers.number2);
+}
+else if (answers.operator === "Modulus") {
+    console.log(answers.number1 % answers.number2);
 }
