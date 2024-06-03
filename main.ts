@@ -33,17 +33,24 @@ const answers: {
   },
 ]);
 
-
 if (answers.operator === "Addition") {
-  console.log((chalk.green.bold("Result: "))+answers.number1 + answers.number2);
+  console.log(
+    chalk.green.bold("Result: ") + (answers.number1 + answers.number2)
+  );
 } else if (answers.operator === "Subtraction") {
-  console.log((chalk.green.bold("Result: "))+(answers.number1 - answers.number2));
+  console.log(
+    chalk.green.bold("Result: ") + (answers.number1 - answers.number2)
+  );
 } else if (answers.operator === "Multiplication") {
-  console.log((chalk.green.bold("Result: "))+answers.number1 * answers.number2);
+  console.log(chalk.green.bold("Result: ") + answers.number1 * answers.number2);
 } else if (answers.operator === "Division") {
-  console.log((chalk.green.bold("Result: "))+answers.number1 / answers.number2);
+  console.log(chalk.green.bold("Result: ") + answers.number1 / answers.number2);
 } else if (answers.operator === "Exponentiation") {
-  console.log((chalk.green.bold("Result: "))+answers.number1 ** answers.number2);
+  console.log(
+    chalk.green.bold("Result: ") + answers.number1 ** answers.number2
+  );
 } else if (answers.operator === "Modulus") {
-  console.log((chalk.green.bold("Result: "))+answers.number1 % answers.number2);
+  console.log(
+    chalk.green.bold("Result: ") + (answers.number1 % answers.number2)
+  );
 }
